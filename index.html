@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Febres Consulting — CP. André Febres</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --fg:#e2e8f0;          /* slate-200 */
+      --muted:#94a3b8;       /* slate-400 */
+      --primary:#22c55e;     /* green-500 */
+      --accent:#38bdf8;      /* sky-400 */
+      --card:#111827;        /* gray-900 */
+      --border:#1f2937;      /* gray-800 */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b1224 0%,#0f172a 100%);color:var(--fg);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid var(--border)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:44px;height:44px;border-radius:8px;background:#fff;color:#000;display:grid;place-items:center;font-weight:700}
+    .title{font-family:"Playfair Display",serif;font-size:26px;margin:0}
+    .tag{color:var(--muted);margin:0}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:28px 0 8px}
+    .h1{font-family:"Playfair Display",serif;font-size:40px;line-height:1.15;margin:0 0 12px}
+    .lead{color:var(--muted);font-size:18px;margin:0 0 18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+    .btns{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:10px;border:1px solid transparent;text-decoration:none;color:#0b1224;background:#e2e8f0;font-weight:700}
+    .btn.whatsapp{background:var(--primary);color:#04180a}
+    .btn.cal{background:var(--accent);color:#041018}
+    .btn.mail{background:#e2e8f0}
+    .section{padding:26px 0;border-top:1px solid var(--border)}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    h2{font-size:22px;margin:0 0 10px}
+    ul{margin:8px 0 0 20px;padding:0}
+    li{margin:6px 0}
+    footer{border-top:1px solid var(--border);padding:22px 0;color:var(--muted);font-size:14px}
+    .disclaimer{font-size:12px;color:#94a3b8;margin-top:8px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">FF</div>
+        <div>
+          <h1 class="title">Febres Consulting</h1>
+          <p class="tag">CP. André Febres — Contabilidad & Tributos</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2 class="h1">Confía en tu futuro financiero <br/>en manos expertas</h2>
+        <p class="lead">Asesoría contable y tributaria de primer nivel para profesionales y negocios en LATAM. Seriedad, precisión y cercanía.</p>
+        <div class="btns">
+          <a class="btn whatsapp" href="https://wa.me/51939330976?text=Hola%20Febres%20Consulting%2C%20quisiera%20agendar%20una%20consulta." target="_blank" rel="noopener">WhatsApp — Agendar</a>
+          <a class="btn cal" href="#calendly">Calendly — Reservar</a>
+          <a class="btn mail" href="mailto:febres.consulting@gmail.com?subject=Consulta%20contable%20%2F%20tributaria&body=Hola%2C%20quisiera%20agendar%20una%20reuni%C3%B3n." >Email</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Servicios</h2>
+        <ul>
+          <li>✅ Contabilidad completa y sin errores</li>
+          <li>✅ Declaraciones tributarias seguras y puntuales</li>
+          <li>✅ Soluciones personalizadas para tu empresa o negocio</li>
+          <li>✅ Atención cercana y de confianza</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section cols">
+      <div class="card">
+        <h2>Por qué elegirnos</h2>
+        <ul>
+          <li>Precisión y cumplimiento normativo</li>
+          <li>Experiencia en pymes y profesionales independientes</li>
+          <li>Comunicación clara y acompañamiento continuo</li>
+        </ul>
+      </div>
+      <div id="calendly" class="card">
+        <h2>Agenda tu reunión</h2>
+        <p class="lead">Usa nuestro calendario para reservar tu cita en minutos.</p>
+        <!-- Reemplaza YOUR-CALENDLY-URL con tu enlace de Calendly (gratuito) -->
+        <div style="background:#0b1224;border:1px dashed var(--border);border-radius:10px;padding:12px;text-align:center">
+          <p style="margin:6px 0;color:var(--muted)">Inserta aquí tu Calendly</p>
+          <code style="font-size:13px;color:#cbd5e1">https://calendly.com/<strong>tu-usuario</strong>/consulta</code>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Contacto</h2>
+        <p><strong>WhatsApp:</strong> +51 939 330 976</p>
+        <p><strong>Email:</strong> febres.consulting@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Febres Consulting — CP. André Febres. Todos los derechos reservados.
+      <div class="disclaimer">Este sitio usa botones de WhatsApp y enlaces de Calendly para agendar. Versiones futuras podrán incluir más idiomas.</div>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
